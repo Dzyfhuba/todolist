@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(to right , black, rgb(51,51,51));
+            }
+            #container{
+                margin:80px auto;
+                
+                letter-spacing:4px;
+            }
+            h1{
+                color:red;
+                text-align:center;
+            }
+            input[type="text"]{
+                text-align:center;
+                width:50%;
+                height:30px;
+                margin-top: 8px;
+                border-radius: 4px;
+                font-weight:bold;
+                letter-spacing: 3px;
+                font-size:20px;
+            }
+            input[type="button"]{
+                
+                margin-left:4px;
+                padding:11px 19px;
+                border-radius:6px;
+                background-color: red;
+                border-width:0px;
+                letter-spacing: 3px;
+                font-weight:bold;
+                font-size:15px;
+            }
+            .coptions{
+                font-size:22px;
+                padding-bottom:5px;
+                margin-left:9px;
+            }
+            .Lists{
+                margin-top:0px;
+                color:black;
+                width:49%;
+                padding-top:7px;
+                padding-bottom :7px;
+                margin-left:10px;
+                background-image:linear-gradient(to left,rgb(153, 0, 0), rgb(255, 51, 51));
+                letter-spacing: 3px;
+                font-weight:bold;
+                font-size:25px;
+                border-radius:4px;
+                display:inline-block;
+            }
+            #btText{
+                text-align: center;
+            }
+            #List{
+               margin-top:50px;
+                text-align:center;
+            }
+            
+        </style>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div id = "container">
+            <h1> What do you want to do today</h1>
+            <div id = "btText">
+                <input type="text" id="todo">
+                <input type="button" value="Add" id="add">
+            </div>
+            
+            <div id="List"></div>
+        </div>
+    </body>
+</html>
