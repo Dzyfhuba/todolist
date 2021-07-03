@@ -31,9 +31,9 @@ function tampilData() {
     db.transaction(function (tx) {
         tx.executeSql("SELECT * FROM todo", [], function (tx, rs) {
 			// alert(rs.rows.item(0).id);
-            var tbtodoList = '<h2 style="text-align: left; color: white">List</h2>';
+            var tbtodoList = '<h2 style="text-align: left; color: white; padding-left: 10%;">List :</h2>';
             for (i = 0; i < rs.rows.length; i++) {
-                tbtodoList += '<div id="maindiv" value=" ' + rs.rows.item(i).id + ' "><span><p class="Lists" id="ListItem"> ' + rs.rows.item(i).isi + ' </p></span><button class="coptions" onclick="hapusData(' + rs.rows.item(i).id + ')">Selesai</button><br></div>';
+                tbtodoList += '<div id="maindiv" value=" ' + rs.rows.item(i).id + ' "><span><p class="Lists" id="ListItem"> ' + rs.rows.item(i).isi + ' </p></span><button class="coptions" onclick="hapusData(' + rs.rows.item(i).id + ')">&#9745;</button><br></div>';
             }
             // <button class="coptions" onclick="complete(ListItem' + rs.rows.item(i).id + ')">✔️</button>
             document.getElementById("List").innerHTML = tbtodoList;
@@ -86,9 +86,6 @@ function hapusData(id) {
 
 function complete(id) {
     var idNum = document.getElementById(id);
-        // idNum.style.backgroundImage = "linear-gradient(to left,rgb(20, 215, 4 ),rgb(210, 244, 208 )";
-        idNum.style.backgroundImage = "linear-gradient(to left,rgb(153, 0, 0), rgb(255, 51, 51))";
-
 
     // if (!isCompleted.value) {
     //     idNum.style.backgroundImage = "linear-gradient(to left,rgb(20, 215, 4 ),rgb(210, 244, 208 )";
