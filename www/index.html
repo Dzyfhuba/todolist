@@ -25,6 +25,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script><meta name="viewport" content="initial-scale=1">
+
         <style>
             body{
                 background-image: linear-gradient(to right , black, rgb(51,51,51));
@@ -53,7 +56,7 @@
                 margin-left:4px;
                 padding:11px 19px;
                 border-radius:6px;
-                background-color: red;
+                background-color: white;
                 border-width:0px;
                 letter-spacing: 3px;
                 font-weight:bold;
@@ -87,17 +90,20 @@
             }
             
         </style>
-        <script src="js/index.js"></script>
+        <!-- <script src="js/index.js"></script> -->
+
     </head>
     <body>
         <div id = "container">
             <h1> What do you want to do today</h1>
             <div id = "btText">
                 <input type="text" id="todo">
-                <input type="button" value="Add" id="add">
+                <input type="button" value="Add" id="add" onclick="insertData();">
             </div>
             
             <div id="List"></div>
         </div>
+
+        <script src="js/database.js"></script>
     </body>
 </html>

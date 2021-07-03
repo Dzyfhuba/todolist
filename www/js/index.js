@@ -59,12 +59,14 @@ var addEvent = function(){
     spanTag.appendChild(para);
     mainDiv.appendChild(spanTag);
     var tick = document.createElement("button");
-    var btextNode = document.createTextNode("✔️");
+    // var btextNode = document.createTextNode("✔️");
+    var btextNode = document.createTextNode("Selesai");
     tick.setAttribute("class","coptions");
     tick.appendChild(btextNode);
     mainDiv.appendChild(tick);
     var bin = document.createElement("button");
-    var bintext = document.createTextNode("🗑️");
+    // var bintext = document.createTextNode("🗑️");
+    var bintext = document.createTextNode("Hapus");
     bin.appendChild(bintext);
     bin.setAttribute("class","coptions");
     mainDiv.appendChild(bin);
